@@ -1,13 +1,15 @@
 # app-questionnaire-vue
 
 ## 23/10
-
-- Initialisation du projet 
-- Ajout des components Home, login, et survey
-- Découverte du système de router
+### Objectifs : 
+- [x] Initialisation du projet 
+- [x] Ajout des components Home, login, et survey
+- [x] Découverte du système de router
 
 ## 28/18
-
+### Objectifs
   - [x] Initialiser poutchDB
-  - [ ] Commencer un questionnaire avec un user
-  - [ ] Enregister un questionnaire
+  - [x] Commencer un questionnaire avec un user
+  - [x] Enregister un questionnaire
+### Résultats
+En plus des objectifs, l'utilisateurs peut accéder à un component lui affichant son score
