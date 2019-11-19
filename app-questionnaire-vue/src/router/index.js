@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../components/Home.vue'
-import Login from '../components/Login.vue'
-import Survey from '../components/Survey'
-import Score from "../components/Score";
+import Home from '../components/bdHome.vue'
+import Login from '../components/bdLogin.vue'
+import Survey from '../components/bdSurvey'
+import Score from "../components/bdScore";
 
 Vue.use(VueRouter)
 

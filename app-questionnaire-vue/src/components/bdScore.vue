@@ -18,7 +18,7 @@
             }
         },
         created(){
-            this.bdScore = this.$props.result.bdScore;
+            this.bdScore = this.$props.result.score;
         }
     }
 </script>

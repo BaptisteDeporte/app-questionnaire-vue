@@ -9,7 +9,6 @@
             <input v-model="bdPassword" type="password" class="form-control" id="password" placeholder="Password" required>
         </div>
         <button type="submit" v-on:submit="bdLogin" class="btn btn-primary">Se connecter</button>
-        <button v-on:click="bdGetLogin">test</button>
     </form>
 </template>
 <script>
