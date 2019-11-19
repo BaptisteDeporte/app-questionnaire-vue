@@ -7,6 +7,19 @@ Cette application est développé en Vue.js 3.11 et utilise PouchDB.
 ## Lien de production
 Cette application est hébergé via github à l'adresse suivante :
 https://baptistedeporte.github.io/#/
+
+## Fonctionnalités 
+
+- [x] Saisie du profile du prestataire
+- [x] Gestion du questionnaire de base
+- [x] Questionnaire accessible depuis "/questionnaire"
+- [x] L'application est disponible en ligne
+- [x] Component affichant le score
+- [x] Gestion des questions aléatoires
+- [x] L'application fonctionne hors ligne
+- [ ] Limiter les questions
+- [ ] Interface administration
+
 ## Initialisation
 
 ```node
