@@ -1,16 +1,15 @@
 <template>
     <form>
-        <div v-bind="truc"></div>
         <div class="form-group">
             <label for="email">Adresse mail</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
+            <input v-model="bdLogin" type="email" class="form-control" id="email" placeholder="Enter email" required>
         </div>
         <div class="form-group">
             <label for="password">Mot de passe</label>
-            <input type="password" class="form-control" id="password" placeholder="Password">
+            <input v-model="bdPassword" type="password" class="form-control" id="password" placeholder="Password" required>
         </div>
-        <button type="submit" v-on:submit="login" class="btn btn-primary">Se connecter</button>
-        <button v-on:click="login">test</button>
+        <button type="submit" v-on:submit="bdLogin" class="btn btn-primary">Se connecter</button>
+        <button v-on:click="bdGetLogin">test</button>
     </form>
 </template>
 <script>
@@ -19,12 +18,14 @@
     export default {
         data: function () {
             return {
-                truc: null
+                bdLogin: '',
+                bdPassword: ''
             }
         },
         methods: {
-            login: function () {
-                db.get('Jean-Yves@gmail.com').then((doc) => {
+            // Check if the credentials are correct
+            bdGetLogin: function () {
+                db.get(this.bdLogin).then((doc) => {
                     console.log(doc);
                 }).catch(err => {
                   console.log(err)

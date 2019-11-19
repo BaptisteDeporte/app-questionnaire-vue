@@ -1,18 +1,18 @@
 <template>
     <div style="height: 100%">
         <div class="container">
-            <form v-on:submit="getSurvey">
+            <form v-on:submit="bdGetSurvey">
                 <div class="form-group">
-                    <label for="firstname">Prénom</label>
-                    <input v-model="firstname" class="form-control" id="firstname" placeholder="Entrez votre prénom" required>
+                    <label for="bdFirstname">Prénom</label>
+                    <input v-model="bdFirstname" class="form-control" id="bdFirstname" placeholder="Entrez votre prénom" required>
                 </div>
                 <div class="form-group">
-                    <label for="lastname">Nom de famille</label>
-                    <input v-model="lastname" class="form-control" id="lastname" placeholder="Entrez votre nom" required>
+                    <label for="bdLastname">Nom de famille</label>
+                    <input v-model="bdLastname" class="form-control" id="bdLastname" placeholder="Entrez votre nom" required>
                 </div>
                 <div class="form-group">
-                    <label for="society">Nom de société</label>
-                    <input v-model="society" class="form-control" id="society" placeholder="Entrez votre nom de société" required>
+                    <label for="bdSociety">Nom de société</label>
+                    <input v-model="bdSociety" class="form-control" id="bdSociety" placeholder="Entrez votre nom de société" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Commencer le questionnaire</button>
             </form>
@@ -26,19 +26,20 @@
     export default {
         data () {
             return {
-                firstname : 'Jean',
-                lastname: 'Yves',
-                society: 'GouteuxFood'
+                bdFirstname : '',
+                bdLastname: '',
+                bdSociety: ''
             }
         },
         methods: {
-            getSurvey: function () {
+            // Create the user on PouchDB and redirect him to the survey component
+            bdGetSurvey: function () {
                 var vm = this;
                 db.put({
-                    "_id": this.firstname + "_" + new Date().getTime(),
-                    "surname": this.firstname,
-                    "lastname": this.lastname,
-                    "society": this.society,
+                    "_id": this.bdFirstname + "_" + new Date().getTime(),
+                    "surname": this.bdFirstname,
+                    "bdLastname": this.bdLastname,
+                    "bdSociety": this.bdSociety,
                 }).then(function (response) {
                     db.replicate.to('http://127.0.0.1:5984/questionnaire');
                     vm.$router.push({ name:"survey", params:{id: response.id}});

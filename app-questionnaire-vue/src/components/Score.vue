@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h2>Votre score est de {{score}} !</h2>
+    <h2>Votre score est de {{bdScore}} !</h2>
     <router-link :to="{name: 'home'}">
         <button type="button" class="btn btn-primary">Retourner à l'accueil</button>
     </router-link>
@@ -8,16 +8,17 @@
 </template>
 
 <script>
+    // This component is called with a props(result) and bind it to the template
     export default {
         name: "Score",
         props: ["result"],
         data: function () {
             return{
-                score: null
+                bdScore: null
             }
         },
         created(){
-            this.score = this.$props.result.score;
+            this.bdScore = this.$props.result.bdScore;
         }
     }
 </script>

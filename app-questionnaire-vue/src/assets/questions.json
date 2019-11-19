@@ -1,0 +1,127 @@
+{
+  "_id": "questions",
+  "_rev": "5-b47b17515baba3cf83e95242d9d47623",
+  "questions": [
+    {
+      "id": 1,
+      "title": "Aimez vous CouchDB ?",
+      "responses": [
+        "Oui",
+        "Non",
+        "Peut-être"
+      ],
+      "result": [
+        "Non",
+        "Peut-être"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Quel équipement ne me permet pas de me protéger efficacement de risques présents sur un chantier ?",
+      "responses": [
+        "Des lunettes de vue",
+        "Un casque",
+        "Des chaussures de sécurité"
+      ],
+      "result": [
+        "Des lunettes de vue"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Suite à une coupure d’alimentation, je m’approche d’une armoire électrique de chantier",
+      "responses": [
+        "Je dois enclencher le disjoncteur et fermer l’armoire",
+        "Je dis appeler la personne habilitée à intervenir sur l’installation électrique",
+        "Je dois vérifier et au besoin remplacer le fusible défaillant"
+      ],
+      "result": [
+        "Je dis appeler la personne habilitée à intervenir sur l’installation électrique"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Jusqu’à combien peut peser une charge de 25 kg mal portée sur les vertèbres lombaires ?",
+      "responses": [
+        "25 kg",
+        "125 kg",
+        "375 kg"
+      ],
+      "result": [
+        "125 kg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Si je travaille à côté d’un engin en mouvement :",
+      "responses": [
+        "J’avertis le conducteur de ma présence",
+        "Je me tiens toujours à 2 mètres de l’engin",
+        "Le chauffeur me verra et fera attention"
+      ],
+      "result": [
+        "J’avertis le conducteur de ma présence",
+        "Je me tiens toujours à 2 mètres de l’engin"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Dans mon métier, je n’effectue aucune intervention sur des matériaux contenant de l’amiante, je n’ai donc pas besoin de formation spécifique.",
+      "responses": [
+        "Vrai",
+        "Faux"
+      ],
+      "result": [
+        "Faux"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Je dois travailler en hauteur :",
+      "responses": [
+        "Je dois toujours utiliser un moyen de protection contre les chutes de hauteur adapté comme un échafaudage ou une plate-forme individuelle",
+        "En dessous de 3 m, je n’ai pas besoin de protection",
+        "Le gros œuvre est toujours responsable des protections contre les chutes sur un chantier"
+      ],
+      "result": [
+        "Je dois toujours utiliser un moyen de protection contre les chutes de hauteur adapté comme un échafaudage ou une plate-forme individuelle"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Je suis en train de travailler à proximité de mon collègue qui utilise un perforateur :",
+      "responses": [
+        "Je dois porter une protection auditive",
+        "Je peux rester à proximité s’il ne l’utilise pas longtemps",
+        "Je ne risque rien "
+      ],
+      "result": [
+        "Je dois porter une protection auditive"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Pour pouvoir conduire un chariot élévateur sur chantier, je dois :",
+      "responses": [
+        "Avoir mon permis de conduire ",
+        "Uniquement être titulaire du CACES (Certificat d’Aptitude à la Conduite en Sécurité) chariot élévateur de chantier",
+        "Avoir une autorisation de conduite délivrée par mon employeur après vérification de mon aptitude médicale et de ma compétence à conduire en sécurité des chariots élévateurs (CACES)"
+      ],
+      "result": [
+        "Avoir une autorisation de conduite délivrée par mon employeur après vérification de mon aptitude médicale et de ma compétence à conduire en sécurité des chariots élévateurs (CACES)"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "J’ai été amené à boire de l’alcool :",
+      "responses": [
+        "Une bière, un verre de vin et un verre de pastis contiennent tous la même quantité d’alcool",
+        "En buvant 3 verres de vin, je peux reprendre le volant",
+        "Un seul verre ne diminue pas la vigilance et les réflexes"
+      ],
+      "result": [
+        "Une bière, un verre de vin et un verre de pastis contiennent tous la même quantité d’alcool"
+      ]
+    }
+  ]
+}
